@@ -10,6 +10,8 @@ public class UserService {
     public void createUser(User user) {
         validateUser(user);
         saveUser(user); 
+    }
+        
     
     @Transactional
     public void saveUser(User user) {
