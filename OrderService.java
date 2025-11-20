@@ -32,7 +32,7 @@ public class OrderProcessor {
             }
 
             order.setTotal(total - order.getDiscount());
-            notificationService.notifyOrderCreated(order);
+            notificationService.notifyOrderCreated(order); // http call with avg latency 5 seconds
             saveOrder(order);
         }
     }
